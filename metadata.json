@@ -1,0 +1,6 @@
+{
+  "name": "ResumeCraft - Professional Resume & CV Builder",
+  "description": "Create ATS-optimized, high-impact professional resumes with modern typography, customizable templates, real-time preview, and AI bullet point enhancement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

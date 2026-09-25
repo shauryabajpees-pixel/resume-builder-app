@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-doc {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.font-sans-doc {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-doc {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-display-doc {
+  font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Print Stylesheet */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .resume-paper-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    width: 100% !important;
+    min-height: auto !important;
+  }
+
+  .resume-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 24px 28px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 100vh !important;
+    page-break-after: always;
+  }
+
+  @page {
+    margin: 12mm 15mm;
+    size: letter portrait;
+  }
+}
+

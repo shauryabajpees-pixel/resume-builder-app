@@ -1,0 +1,341 @@
+import { ResumeData } from '../types/resume';
+
+export const sampleSoftwareEngineer: ResumeData = {
+  id: 'resume-swe-senior',
+  title: 'Senior Software Engineer',
+  updatedAt: new Date().toISOString(),
+  personal: {
+    fullName: 'David Sterling',
+    headline: 'Senior Full-Stack & Distributed Systems Engineer',
+    email: 'david.sterling@email.com',
+    phone: '+1 (415) 555-0198',
+    location: 'San Francisco, CA',
+    website: 'https://davidsterling.dev',
+    linkedin: 'linkedin.com/in/david-sterling-dev',
+    github: 'github.com/davidsterling',
+  },
+  summary:
+    'Distinguished Software Engineer with 7+ years of experience architecting resilient cloud systems, high-throughput microservices, and reactive web applications. Proven track record reducing infrastructure latency by 42% and scaling event streaming pipelines handling 50M+ daily events. Passionate about developer ergonomics, TypeScript, distributed consensus, and clean architectural boundaries.',
+  experiences: [
+    {
+      id: 'exp-1',
+      company: 'Vanguard Cloud Systems',
+      role: 'Staff Software Engineer',
+      location: 'San Francisco, CA',
+      startDate: '2022-03',
+      endDate: 'Present',
+      current: true,
+      bullets: [
+        'Architected real-time event streaming pipeline using Kafka and Go, processing 50M+ telemetry events daily with 99.99% availability.',
+        'Migrated monolithic data aggregation service to asynchronous distributed microservices, trimming p99 latency from 850ms to 120ms.',
+        'Mentored an engineering squad of 8 engineers, instilling strict TypeScript typing standards and end-to-end integration test coverage (>90%).',
+        'Spearheaded multi-region disaster recovery failover automation that reduced cold-start recovery time from 45 minutes to 3.5 minutes.',
+      ],
+    },
+    {
+      id: 'exp-2',
+      company: 'Aether Technologies',
+      role: 'Senior Full-Stack Engineer',
+      location: 'Seattle, WA',
+      startDate: '2019-06',
+      endDate: '2022-02',
+      current: false,
+      bullets: [
+        'Built low-latency web dashboard with React, Vite, and WebSocket synchronization for 120,000 active enterprise operators.',
+        'Optimized PostgreSQL query execution plans and index partitioning strategies, eliminating query bottlenecks and saving $45K monthly in compute costs.',
+        'Developed reusable internal design system components adopted by 14 cross-functional product squads across the organization.',
+      ],
+    },
+    {
+      id: 'exp-3',
+      company: 'Catalyst Labs',
+      role: 'Software Engineer',
+      location: 'Austin, TX',
+      startDate: '2017-08',
+      endDate: '2019-05',
+      current: false,
+      bullets: [
+        'Engineered REST and GraphQL APIs using Node.js and Docker containerized workloads on AWS ECS.',
+        'Implemented OAuth 2.0 and PKCE authentication flows, securing multi-tenant APIs against token replay attacks.',
+        'Collaborated closely with product managers and UX designers in rapid two-week agile release sprints.',
+      ],
+    },
+  ],
+  educations: [
+    {
+      id: 'edu-1',
+      institution: 'University of California, Berkeley',
+      degree: 'Bachelor of Science',
+      fieldOfStudy: 'Computer Science & Applied Mathematics',
+      location: 'Berkeley, CA',
+      startDate: '2013-09',
+      endDate: '2017-05',
+      gpa: '3.86 / 4.0',
+      honors: 'Dean’s Honor List (4 semesters), Magna Cum Laude',
+    },
+  ],
+  skillCategories: [
+    {
+      id: 'skill-1',
+      name: 'Languages & Runtimes',
+      skills: ['TypeScript', 'JavaScript (ESNext)', 'Go', 'Python', 'SQL', 'Rust', 'Node.js'],
+    },
+    {
+      id: 'skill-2',
+      name: 'Frameworks & Frontend',
+      skills: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'GraphQL', 'Redux Toolkit', 'Zustand'],
+    },
+    {
+      id: 'skill-3',
+      name: 'Cloud & Infrastructure',
+      skills: ['AWS (ECS, Lambda, SQS, S3)', 'Docker', 'Kubernetes', 'Apache Kafka', 'PostgreSQL', 'Redis', 'Terraform'],
+    },
+    {
+      id: 'skill-4',
+      name: 'Practices & Protocols',
+      skills: ['Distributed Systems', 'System Design', 'Microservices', 'CI/CD Pipelines', 'REST APIs', 'gRPC', 'Test-Driven Development'],
+    },
+  ],
+  projects: [
+    {
+      id: 'proj-1',
+      title: 'FluxDB - Lightweight In-Memory Time-Series Engine',
+      description: 'Open-source embedded time-series database optimized for real-time sensor aggregation.',
+      link: 'https://fluxdb.dev',
+      github: 'github.com/davidsterling/fluxdb',
+      techStack: ['Go', 'Raft Consensus', 'gRPC', 'Docker'],
+      bullets: [
+        'Engineered custom memory compaction engine handling 250,000 metrics/sec with sub-millisecond query execution.',
+        'Achieved 1,400+ GitHub stars with active community contributors and 50+ enterprise production deployments.',
+      ],
+    },
+    {
+      id: 'proj-2',
+      title: 'KubePulse - Cluster Telemetry CLI & Visualizer',
+      description: 'Interactive terminal and web UI for real-time Kubernetes pod health tracking.',
+      link: 'https://kubepulse.io',
+      github: 'github.com/davidsterling/kubepulse',
+      techStack: ['TypeScript', 'React', 'Go', 'WebSockets'],
+      bullets: [
+        'Streamlined multi-cluster health monitoring into single dashboard with instantaneous node memory alert dispatch.',
+      ],
+    },
+  ],
+  certifications: [
+    {
+      id: 'cert-1',
+      name: 'AWS Certified Solutions Architect – Professional',
+      issuer: 'Amazon Web Services',
+      issueDate: '2023-04',
+      url: 'https://aws.amazon.com/certification',
+    },
+    {
+      id: 'cert-2',
+      name: 'Certified Kubernetes Administrator (CKA)',
+      issuer: 'Cloud Native Computing Foundation (CNCF)',
+      issueDate: '2022-09',
+    },
+  ],
+  languages: [
+    { id: 'lang-1', language: 'English', proficiency: 'Native' },
+    { id: 'lang-2', language: 'German', proficiency: 'Professional' },
+  ],
+  customSections: [],
+  sectionOrder: [
+    'summary',
+    'experience',
+    'skills',
+    'projects',
+    'education',
+    'certifications',
+    'languages',
+  ],
+  theme: {
+    template: 'modern',
+    accentColor: '#1e293b',
+    fontFamily: 'sans',
+    spacing: 'normal',
+    fontSize: 'base',
+    paperSize: 'letter',
+  },
+};
+
+export const sampleProductManager: ResumeData = {
+  id: 'resume-pm-lead',
+  title: 'Principal Product Manager',
+  updatedAt: new Date().toISOString(),
+  personal: {
+    fullName: 'Elena Rostova',
+    headline: 'Principal Product Manager · Enterprise SaaS & AI Platforms',
+    email: 'elena.rostova@pmlead.com',
+    phone: '+1 (206) 555-0144',
+    location: 'Seattle, WA',
+    website: 'https://elenarostova.com',
+    linkedin: 'linkedin.com/in/elena-rostova-pm',
+  },
+  summary:
+    'Customer-obsessed Principal Product Manager with 8+ years leading cross-functional engineering, design, and GTM teams from zero to $30M+ ARR. Specialized in enterprise workflow automation, data platforms, and product-led growth (PLG) loops. Proven track record increasing user retention by 28% and launching flagship enterprise offerings adopted by 80+ Fortune 500 corporations.',
+  experiences: [
+    {
+      id: 'exp-pm-1',
+      company: 'Hyperion Cloud',
+      role: 'Principal Product Manager – Core Platform',
+      location: 'Seattle, WA',
+      startDate: '2021-08',
+      endDate: 'Present',
+      current: true,
+      bullets: [
+        'Spearheaded roadmap and vision for AI workflow engine, driving $18.5M in new Annual Recurring Revenue within first 14 months.',
+        'Established quantitative discovery framework analyzing telemetry across 450,000 weekly active enterprise accounts.',
+        'Partnered with enterprise sales leadership to close 12 key enterprise deals valued at $4.2M total contract value (TCV).',
+        'Reduced customer onboarding drop-off by 34% by re-architecting initial workspace setup and guided product tour flows.',
+      ],
+    },
+    {
+      id: 'exp-pm-2',
+      company: 'Zenith Systems',
+      role: 'Senior Product Manager',
+      location: 'San Francisco, CA',
+      startDate: '2018-03',
+      endDate: '2021-07',
+      current: false,
+      bullets: [
+        'Owned billing and self-serve upgrade funnels, growing conversion rate from 2.8% to 4.9% across 2M monthly web visitors.',
+        'Led agile pod of 14 engineers, 2 UX designers, and 1 dedicated data scientist across 26 continuous release milestones.',
+        'Standardized feature prioritization framework using weighted RICE scoring, enhancing release predictability by 40%.',
+      ],
+    },
+  ],
+  educations: [
+    {
+      id: 'edu-pm-1',
+      institution: 'Northwestern University',
+      degree: 'Master of Business Administration (MBA)',
+      fieldOfStudy: 'Strategy & Technology Management',
+      location: 'Evanston, IL',
+      startDate: '2016-09',
+      endDate: '2018-06',
+      gpa: '3.91 / 4.0',
+    },
+    {
+      id: 'edu-pm-2',
+      institution: 'University of Washington',
+      degree: 'Bachelor of Science',
+      fieldOfStudy: 'Industrial & Systems Engineering',
+      location: 'Seattle, WA',
+      startDate: '2012-09',
+      endDate: '2016-06',
+    },
+  ],
+  skillCategories: [
+    {
+      id: 'pm-sk-1',
+      name: 'Product Strategy & Discovery',
+      skills: ['Product Vision & Roadmap', 'User Research & Interviews', 'RICE Prioritization', 'Product-Led Growth (PLG)', 'Competitive Intelligence'],
+    },
+    {
+      id: 'pm-sk-2',
+      name: 'Analytics & Metrics',
+      skills: ['Mixpanel', 'Amplitude', 'SQL & Telemetry', 'Cohort Retention', 'A/B Testing & Multivariate', 'Funnel Optimization'],
+    },
+    {
+      id: 'pm-sk-3',
+      name: 'Leadership & Execution',
+      skills: ['Cross-Functional Squad Leadership', 'Agile / Scrum Sprint Planning', 'Executive Stakeholder Alignment', 'Go-To-Market (GTM)'],
+    },
+  ],
+  projects: [
+    {
+      id: 'pm-proj-1',
+      title: 'Enterprise Workspace Multi-Tenant Migration',
+      description: 'Strategic zero-downtime platform migration to enterprise tier workspaces.',
+      techStack: ['Product Discovery', 'SQL', 'Figma', 'Amplitude'],
+      bullets: [
+        'Delivered 3 months ahead of schedule, facilitating instant SOC2 compliance for tier-1 bank customers.',
+      ],
+    },
+  ],
+  certifications: [
+    {
+      id: 'pm-cert-1',
+      name: 'Pragmatic Institute Certified (PMC-III)',
+      issuer: 'Pragmatic Institute',
+      issueDate: '2020-05',
+    },
+  ],
+  languages: [
+    { id: 'pm-lang-1', language: 'English', proficiency: 'Native' },
+    { id: 'pm-lang-2', language: 'French', proficiency: 'Fluent' },
+  ],
+  customSections: [],
+  sectionOrder: [
+    'summary',
+    'experience',
+    'skills',
+    'education',
+    'projects',
+    'certifications',
+    'languages',
+  ],
+  theme: {
+    template: 'executive',
+    accentColor: '#0f766e',
+    fontFamily: 'serif',
+    spacing: 'normal',
+    fontSize: 'base',
+    paperSize: 'letter',
+  },
+};
+
+export const sampleBlankResume: ResumeData = {
+  id: 'resume-blank',
+  title: 'Untitled Resume',
+  updatedAt: new Date().toISOString(),
+  personal: {
+    fullName: '',
+    headline: '',
+    email: '',
+    phone: '',
+    location: '',
+    website: '',
+    linkedin: '',
+    github: '',
+  },
+  summary: '',
+  experiences: [],
+  educations: [],
+  skillCategories: [
+    {
+      id: 'cat-1',
+      name: 'Core Skills',
+      skills: [],
+    },
+  ],
+  projects: [],
+  certifications: [],
+  languages: [],
+  customSections: [],
+  sectionOrder: [
+    'summary',
+    'experience',
+    'education',
+    'skills',
+    'projects',
+    'certifications',
+    'languages',
+  ],
+  theme: {
+    template: 'modern',
+    accentColor: '#1e293b',
+    fontFamily: 'sans',
+    spacing: 'normal',
+    fontSize: 'base',
+    paperSize: 'letter',
+  },
+};
+
+export const PRESET_RESUMES: Record<string, ResumeData> = {
+  swe: sampleSoftwareEngineer,
+  pm: sampleProductManager,
+  blank: sampleBlankResume,
+};
